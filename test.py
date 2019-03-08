@@ -1,4 +1,3 @@
-def fun():
-    print("hello world")
 
-fun()
+s = "abdul"
+print(s.__len__())
