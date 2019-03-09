@@ -11,6 +11,7 @@
 #             return False
 #     return True
 
+
 def ispallindrome(s, itr, len):
     if len < 2 or itr >= int(len/2):
         return True
