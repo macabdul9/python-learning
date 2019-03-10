@@ -41,11 +41,16 @@ def pop_front(head):
 
 
 def pop_back(head):
+    if head is None:
+        return None
+
     if head.next is None:
         return None
+
     tmp = head
     while tmp.next.next is not None:
         tmp = tmp.next
+    tmp.next = None
     return tmp
 
 
@@ -57,5 +62,10 @@ if __name__ == "__main__":
     printlist(head)
     print()
     head = pop_front(head)
-    head = pop_front(head)
+    end = pop_back(head)
+    end = pop_back(head)
+    head = pop_back(head)
+    printlist(head)
+    head = end = insertnode(end, 30)
+    end = insertnode(end, 40)
     printlist(head)
