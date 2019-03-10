@@ -8,5 +8,6 @@ if __name__ == "__main__":
 # print("a / b = ", a / b, "a//b = ", a//b)
 
 # shift operator
-print (a << 1, a >> 1)
+print (a << 1, a >> 1) # << left shit  >> right shift
+
 
