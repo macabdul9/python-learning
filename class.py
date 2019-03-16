@@ -1,10 +1,10 @@
-class Test:
-    def __init__(self):
-        print("im constructor !")
+class Person:
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
 
-    def  fun(self):
-        print("im class fun !")
+    def show(self):
+        print(self.name, self.age)
 
-
-t = Test()
-t.fun()
+p = Person("Abdul", 20)
+p.show()
