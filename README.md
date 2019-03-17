@@ -1,3 +1,3 @@
 # python-learning
 
-python-learning from begining. 
+python-learning from beginning. 
