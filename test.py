@@ -1,3 +1,4 @@
 
-s = "abdul"
-print(s.__len__())
+from mypackage import greet as g
+
+g.SayHello('abdul')
