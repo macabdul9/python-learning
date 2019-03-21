@@ -15,5 +15,5 @@ if __name__ == "__main__":
     name = 'abdulwaheed'
     for ch in name:
         print(ch, end = ' ')
-
+                            
 

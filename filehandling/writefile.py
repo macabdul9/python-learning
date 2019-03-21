@@ -5,9 +5,13 @@
 """
 
 def writefile():
-    myfile = open('firstfile.txt', 'rt')
-    
+    myfile = open('firstfile.txt', 'wt')
+    myfile.write('adfhdsdssfsd\n')
+    myfile.writelines('asfssdhd\n')
+    myfile.write('sdfjhdsdasjdhfsdkasjfvd\n')
+    myfile.write('dsdfdsf vdvscdc fvdvsd\n')
+    myfile.write('fdjks')
 
 if __name__ == "__main__":
-    
+    writefile()
 
