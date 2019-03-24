@@ -14,7 +14,7 @@ cursor = mydb.cursor()
 # first let's drop the primary for convenience !
 # cursor.execute('ALTER TABLE users DROP id') deleted already !
 
-query = 'INSERT INTO users(name,user_name) values(%s, %s)'
+#query = 'INSERT INTO users(name,user_name) values(%s, %s)'
 values = ('abdul', 'macab')
 
 cursor.execute(query, values)
