@@ -25,6 +25,7 @@ cursor = db.cursor()
 # for record in records:
 #    print(record)
 
+'''
 # getting coloumn!
 
 query = 'select user_name from users'
@@ -33,5 +34,16 @@ usernames = cursor.fetchall()
 for username in usernames:
     for entries in username:
         print(entries)
+
+'''
+
+# getting more than one col.
+query = 'select user_name, name from users'
+cursor.execute(query)
+pair = cursor.fetchall()
+for tup in pair:
+    for entry in tup:
+        print(entry, end = " ")
+    print()
 
 
