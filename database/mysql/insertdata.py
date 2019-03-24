@@ -3,28 +3,32 @@
  @file      : insertdata
  @created   : Sunday Mar 24, 2019 20:41:18 IST
 """
-
 import mysql.connector as mysql
 
-mydb = mysql.connect(host = '127.0.0.1', user = 'macab', passwd = 'Sudo$0#1', database = 'pydb')
+db = mysql.connect(
+    host = "localhost",
+    user = "macab",
+    passwd = "Sudo$0#1",
+    database = "pydb"
+)
 
-# get a cursor
-cursor = mydb.cursor()
+cursor = db.cursor()
 
-# first let's drop the primary for convenience !
-# cursor.execute('ALTER TABLE users DROP id') deleted already !
+## defining the Query
+query = "INSERT INTO users (name, user_name) VALUES (%s, %s)"
+## storing values in a variable
+values = [
+    ("Peter", "peter"),
+    ("Amy", "amy"),
+    ("Michael", "michael"),
+    ("Hennah", "hennah")
+]
 
-#query = 'INSERT INTO users(name,user_name) values(%s, %s)'
-values = ('abdul', 'macab')
-
-cursor.execute(query, values)
-
-# inserting multiple values
-
-
-
+## executing the query with values
+cursor.executemany(query, values)
 
 ## to make final output we have to run the 'commit()' method of the database object
-mydb.commit()
+db.commit()
 
-print(cursor.rowcount, "record inserted")
+print(cursor.rowcount, "records inserted")
+
