@@ -5,6 +5,4 @@
 """
 
 def probgeneratingfunction(table):
-    pass
-
-
+    

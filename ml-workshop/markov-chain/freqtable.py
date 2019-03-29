@@ -25,8 +25,8 @@ def freqtable(input_data, k = 3):
 
     return table;
 
-# table = freqtable('hello world hello world hello hello')
-# print(table)
+table = freqtable('hello world hello world hello hello')
+print(table)
 # for chunk in table:
 #    print(chunk)
 
