@@ -11,5 +11,10 @@
       <user-name>macab</user-name>
       <introspection-schemas>*:@</introspection-schemas>
     </data-source>
+    <data-source name="MySQL - @localhost" uuid="2b858c65-d04c-49cf-bce8-6987f677d97d">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MYSQL" exact-version="0" />
+      <secret-storage>master_key</secret-storage>
+      <user-name>macab</user-name>
+    </data-source>
   </component>
 </project>

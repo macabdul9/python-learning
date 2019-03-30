@@ -12,7 +12,7 @@ def generatorfun():
 if __name__ == "__main__":
     x = generatorfun()
     # x is the generator object
+    print(x.__next__())
+    print(x.__next__())
 
-    print(x.next())
-    print(x.next())
 
