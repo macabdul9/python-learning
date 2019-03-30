@@ -44,6 +44,6 @@ def inclexcl(arr, k):
 
 
 if __name__ == "__main__":
-    arr = [2, 3, 5, 7]
+    arr = [2, 11, 5, 7]
     print(inclexcl(arr, 100))
 
