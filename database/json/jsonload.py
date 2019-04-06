@@ -8,8 +8,11 @@ import json
 
 # json data
 
-person = '{"name" : "Abdul Waheed", "languages" : ["Ci++", "Python"]}'
+person = '{"name" : "Abdul Waheed", "languages" : ["C++", "Python"]}'
 
 person_dict = json.loads(person)
-print(person_dict['languages'])
+print(person_dict)
+
+for entry in person_dict:
+    print(entry.encode("ascii","replace"))
 
