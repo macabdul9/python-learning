@@ -15,3 +15,6 @@ string = df.to_string(header=False,index=False)
 #after modifying
 print(string)
 
+#
+print(df['Survived'].dtypes)
+
