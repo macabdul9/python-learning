@@ -7,35 +7,41 @@
 import numpy as np
 
 
-# In[2]:
+# In[19]:
 
 
 # let's create a two dimensional array !
-x = np.array([[1, 2, 3], [3, 4, 5], [7, 8, 9]])
+x = np.array([[1, 2, 3], [3, 4, 5], [7, 8, 9], [10, 11, 12]])
 print(x.shape)
 
 
-# In[3]:
+# In[20]:
 
 
 v = np.array([1, 2, 4])
 print(v.shape)
 
 
-# In[10]:
+# In[21]:
 
 
-z = np.empty_like(x)
-print(z.shape)
-print(z)
+y = np.empty_like(x)
+print(y.shape)
+print(y)
 
 
-# In[ ]:
+# In[22]:
 
 
-# add the vector v to the each row of z
+# Add the vector v to each row of the matrix x with an explicit loop
 for each in range(4):
-    z[1,:] = 
+    y[each,:] = x[each, :] + v 
+
+
+# In[23]:
+
+
+print(y)
 
 
 # In[ ]:
