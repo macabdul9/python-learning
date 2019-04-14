@@ -10,10 +10,10 @@ import pprint
 client = pymongo.MongoClient('mongodb://localhost:27017/')
 
 #  get a database !
-db = client.department
+db = client.company
 
 # get a collection !
-collection = db.student
+collection = db.students
 
 # pprint.pprint(collection.find_one())
 
