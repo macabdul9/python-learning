@@ -15,7 +15,7 @@ db = client.department
 # get a collection !
 collection = db.student
 
-pprint.pprint(collection.find_one())
+# pprint.pprint(collection.find_one())
 
 #l = iter(docs)
 '''
@@ -26,3 +26,11 @@ while True:
     else:
         break
 '''
+
+cursor = collection.find()
+
+while True:
+    try:
+        print(cursor.next())
+    except:
+        break
