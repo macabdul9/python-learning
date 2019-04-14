@@ -5,7 +5,7 @@
 """
 
 import pymongo
-
+import pprint
 # connect to the local server of the database !
 client = pymongo.MongoClient('mongodb://localhost:27017/')
 
@@ -15,13 +15,14 @@ db = client.department
 # get a collection !
 collection = db.student
 
-docs = collection.find()
+pprint.pprint(collection.find_one())
 
-l = iter(docs)
-
+#l = iter(docs)
+'''
 while True:
     val = next(l, 'end')
     if val != 'end':
         print(val)
     else:
         break
+'''
