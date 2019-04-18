@@ -14,4 +14,10 @@ db = client.company
 
 collection = db.tutors
 
-collection.insert_one(record.json)
+data = { "Name" :"Abdul", "Age":19 }
+
+
+x = collection.insert_one(data)
+
+print(type(x))
+print(x.inserted_id)
