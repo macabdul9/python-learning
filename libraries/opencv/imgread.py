@@ -26,7 +26,12 @@ img = cv.cvtColor(image, cv.COLOR_BGR2RGB)
 
 #print(example.add(30 , 20))
 
-cropped = image[0:200, 100:300]
+# cropped = image[0:200, 100:300]
+#
+# bw = cv.cvtColor(cropped, cv.COLOR_BGR2RGB)
+# view.viewImage(bw, "cropped")
 
-bw = cv.cvtColor(cropped, cv.COLOR_BGR2RGB)
-view.viewImage(bw, "cropped")
+gray_image = cv.cvtColor(image, cv.COLOR_BGR2GRAY)
+ret, threshold_image = cv.threshold(image, 127, 255, 0)
+#view.viewImage(gray_image, "Gray-scale doggo")
+view.viewImage(threshold_image, "Black & White doggo")
